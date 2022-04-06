@@ -1,0 +1,99 @@
+// Initialize folder for git
+git init
+
+// Set a user name and email globally
+git config --global user.name "name"
+git config --global user.email "name@gmail.com"
+
+// Set a user name and email for single repository
+git config user.name "name"
+git config user.email "name@gmail.com"
+
+// List user name and email and other config info
+git config --list
+
+// Check the current status of your repo
+git status
+
+// Stage a single file from working directory
+git add <filename>
+
+// Stage all files from working directory
+git add --all
+git add .
+
+// Commit staged file 
+git commit -m "commit message here"
+
+// List all commit logs
+git log
+
+// List all commit logs in single line
+git log --oneline
+
+// Switch/checkout existing branch
+git checkout <branch>
+
+// Create and checkout new branch
+git checkout -b <new-branch>
+
+// Switch/checkout main branch
+git checkout main
+
+// List unstaged changes
+git diff
+
+// List difference between two commit
+git diff <old-commit> <new-commit>
+
+// List difference between local repository and working derectory
+git diff --staged
+
+// Show the specific commit
+git show <commit>
+
+// Remove/delete a file from local repository
+git rm <filename>
+
+// Remove/delete a file from staging area
+git reset HEAD <filename>
+
+// Push commits to remote repository
+git push origin main
+
+// Clone repository
+git clone <repo-link>
+git clone <repo-link> <new-name>
+
+// Fetch a specific branch but DO NOT merge
+git fetch <remote> <branch>
+
+// Pull a specified remote's copy of current branch and merge
+git pull <remote>
+
+// List all branches in your repo
+git branch
+
+// Delete a branch
+git branch -D <branch>
+
+// Merge branch into the current branch
+git merge <branch>
+
+// Hide/stash modified and untracked files 
+git stash
+
+// List all stash
+git stash list
+
+// Get back to before stashing status
+git stash apply --index
+
+// Get back a specific stash
+git stash apply stash@{2}
+
+// Check which files will be deleted with git clean use -n to dry run
+git clean -d -n
+
+// Delete a unstaged or untacked file (-f to forcefully delete)
+git clean -d -f
